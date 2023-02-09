@@ -1,0 +1,13 @@
+.btn-personal{
+    display: flex !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.img-proyecto{
+    height: 150px;
+    object-fit: cover;
+}
