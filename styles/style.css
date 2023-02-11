@@ -1,3 +1,28 @@
+.img-personal{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.contenedor-personal{
+    max-width: 100% !important;
+    margin-left: 0px !important;
+}
+
+.presentacion-personal{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.parrafo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .btn-personal{
     display: flex !important;
     flex-direction: column;
@@ -10,4 +35,16 @@
 .img-proyecto{
     height: 150px;
     object-fit: cover;
+}
+
+@media (max-width: 1024px){
+    .img-personal{
+        object-position: -100px;
+    }
+}
+
+@media (max-width: 768px){
+    .img-personal{
+        object-position: center;
+    }
 }
