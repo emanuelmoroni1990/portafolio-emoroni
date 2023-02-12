@@ -4,67 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Emanuel Moroni</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Emanuel Moroni</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link active" 
-                href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Estudios</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Proyectos realizados
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./pages/c.html">C / C++</a></li>
-                    <li><a class="dropdown-item" href="#">FrontEnd</a></li>
-                    <li><a class="dropdown-item" href="#">BackEnd</a></li>
+    <header class="header">
+        <hr>
+        <nav class="navbar navbar__personal navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand navbar-brand__personal" href="#">Emanuel Moroni</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link nav-link__personal" 
+                    href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link nav-link__personal" href="#">Estudios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link__personal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Proyectos realizados
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/c.html">C / C++</a></li>
+                        <li><a class="dropdown-item" href="#">FrontEnd</a></li>
+                        <li><a class="dropdown-item" href="#">BackEnd</a></li>
+                    </ul>
+                    </li>
                 </ul>
-                </li>
-            </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <hr>
+    </header>
 
     <!-- Presentación personal -->
-    <div class="container contenedor-personal">
-        <div class="row justify-content-center">
-            <div class="presentacion-personal col-lg-6 col-md-6">
-                <img src="img/Emanuel_Moroni.jpg" class="img-personal" alt="...">
-            </div>
-            <div class="presentacion-personal col-lg-6 col-md-6">
-                <p class="parrafo">
-                    ¡Hola a todos! Mi nombre es Emanuel Moroni y deseo compartir en este breve sitio web un poco sobre mis conocimientos y habilidades.
-                </p>
-                <p class="parrafo">
-                    En el año 2008 comencé la carrera de ingeniería en electrónica en la Universidad Tecnológica Nacional Facultad Regional Buenos Aires (UTN - FRBA), ubicada en la ciudad de Buenos Aires, Argentina.
-                </p>
-                <p class="parrafo">
-                    Durante toda la carrera aprendí mucho sobre electrónica y programación, específicamente programación de sistemas embebidos. Para esto utilice los lenguajes de C y C++, pero apoyándome siempre sobre otros que fueron necesarios.
-                </p>
-                <p class="parrafo">
-                    En los últimos 5 años estuve trabajando como profesor en la Escuela Técnica Roberto Rocca, enseñando sobre electrónica y programación. Empleando plataformas como Arduino y NodeMCU, pudimos desarrollar, junto con los estudiantes, numerosos proyectos que vinculaban los sistemas embebidos, con el desarrollo web y la gestión de bases de datos. 
-                </p>
-                <p class="parrafo">
-                    Los invito a recorrer este espacio para conocer un poco más de mi y mi trabajo. Siéntase en la profunda libertad de consultar, mencionar o criticar para mejoras.
-                </p>
+    <div class="main-section">
+        <h1 class="main-section__title">Emanuel Moroni</h1>
+        <div class="container contenedor-personal">
+            <div class="row justify-content-center">
+                <div class="presentacion-personal col-lg-6 col-md-6">
+                    <img src="img/Emanuel_Moroni.jpg" class="img-personal" alt="...">
+                </div>
+                <div class="presentacion-personal col-lg-6 col-md-6">
+                    <p class="parrafo">
+                        ¡Hola a todos! Mi nombre es Emanuel Moroni y deseo compartir en este breve sitio web un poco sobre mis conocimientos y habilidades.
+                    </p>
+                    <p class="parrafo">
+                        En el año 2008 comencé la carrera de ingeniería en electrónica en la Universidad Tecnológica Nacional Facultad Regional Buenos Aires (UTN - FRBA), ubicada en la ciudad de Buenos Aires, Argentina.
+                    </p>
+                    <p class="parrafo">
+                        Durante toda la carrera aprendí mucho sobre electrónica y programación, específicamente programación de sistemas embebidos. Para esto utilice los lenguajes de C y C++, pero apoyándome siempre sobre otros que fueron necesarios.
+                    </p>
+                    <p class="parrafo">
+                        En los últimos 5 años estuve trabajando como profesor en la Escuela Técnica Roberto Rocca, enseñando sobre electrónica y programación. Empleando plataformas como Arduino y NodeMCU, pudimos desarrollar, junto con los estudiantes, numerosos proyectos que vinculaban los sistemas embebidos, con el desarrollo web y la gestión de bases de datos. 
+                    </p>
+                    <p class="parrafo">
+                        Los invito a recorrer este espacio para conocer un poco más de mi y mi trabajo. Siéntase en la profunda libertad de consultar, mencionar o criticar para mejoras.
+                    </p>
+                </div>
             </div>
         </div>
+        <hr class="main-section__end">
     </div>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <hr>
+        <div class="footer__nav">
+            <div></div>
+            <ul class="row__personal row__personal--foot">
+                <!-- Quite las clases col__foot. TODO OK. REVISAR. emoroni. -->
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-gitlab"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <div></div>
+        </div>
+        <hr>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

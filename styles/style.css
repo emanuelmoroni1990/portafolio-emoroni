@@ -2,7 +2,68 @@
  * Links de interés:
  * https://www.w3.org/TR/css-flexbox-1/#abspos-items
  * https://stackoverflow.com/questions/41033245/does-position-absolute-conflict-with-flexbox 
+ * https://www.designpieces.com/palette/linkedin-color-palette-hex-and-rgb/
  */
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --main-background-color: rgb(241, 250, 238);;
+    --main-color: rgb(69, 123, 157);
+    --main-letter-color: rgb(241, 250, 238);
+    --main-hr-color: rgb(29, 53, 87);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    /* background-color: var(--main-background-color); */
+}
+
+ul{
+    list-style: none;
+}
+
+hr{
+    margin: 0;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+    opacity: 1;
+    border-color: var(--main-hr-color);
+}
+
+.navbar>.container-fluid {
+    justify-content: end;
+}
+
+.navbar__personal{
+    background-color: var(--main-color) !important;
+}
+
+.navbar-brand__personal{
+    color: var(--main-letter-color);
+}
+
+.nav-link__personal{
+    color: var(--main-letter-color);
+}
+
+.main-section__title{
+    font-size: xx-large;
+    text-align: center;
+    color: var(--main-font-color);
+    padding: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-bottom: 1px solid var(--main-hr-color);
+}
 
 .img-personal{
     width: 100%;
@@ -12,6 +73,7 @@
 }
 
 .contenedor-personal{
+    margin-top: 1rem;
     max-width: 100% !important;
     margin-left: 0px !important;
 }
@@ -27,6 +89,70 @@
 .parrafo{
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.main-section__end{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+footer {
+    width: 100%;
+    /* overflow: hidden; */
+    position: fixed;
+    bottom: 0%;
+    background-color: var(--main-color);
+}
+
+.footer__nav {
+    height: 3.5rem;
+    /* display: grid;
+    grid-template-columns: 20vw auto 20vw;
+    justify-content: stretch; */
+}
+
+.footer__nav ul li {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+
+.footer__nav ul li {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+}
+
+.fa-github, .fa-gitlab, .fa-linkedin{
+    color: var(--main-letter-color);
+}
+
+.fa-github:hover {
+    color: rgba(110, 84, 148);
+}
+
+.fa-gitlab:hover {
+    color: rgba(226, 67, 41, 0.85);
+}
+
+.fa-linkedin:hover {
+    color: rgba(0, 160, 220, 0.85);
+}
+
+.row__personal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.row__personal--foot {
+    justify-content: space-evenly;
+    padding: 0;
 }
 
 .btn-personal{
@@ -61,6 +187,11 @@
 }
 
 @media (max-width: 767px){
+
+    .main-section{
+        margin-bottom: 2.5rem;
+    }
+
     .img-personal{
         object-position: center;
     }
