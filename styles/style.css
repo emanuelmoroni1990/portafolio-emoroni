@@ -3,7 +3,11 @@
  * https://www.w3.org/TR/css-flexbox-1/#abspos-items
  * https://stackoverflow.com/questions/41033245/does-position-absolute-conflict-with-flexbox 
  * https://www.designpieces.com/palette/linkedin-color-palette-hex-and-rgb/
+ * https://stackoverflow.com/questions/33621607/css-pseudo-class-for-having-clicked-on-a-button
+ * Paleta de colores: https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557
  */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 *{
     box-sizing: border-box;
@@ -53,7 +57,16 @@ hr{
     color: var(--main-letter-color);
 }
 
+.dropdown-menu a:active{
+    background-color: rgb(168, 218, 220);
+}
+
+.dropdown-item__personal.active{
+    background-color: rgb(230, 57, 70);
+}
+
 .main-section__title{
+    font-family: 'Quicksand', sans-serif;
     font-size: xx-large;
     text-align: center;
     color: var(--main-font-color);
@@ -89,11 +102,21 @@ hr{
 .parrafo{
     margin-top: 1rem;
     margin-bottom: 1rem;
+
+    /* animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    /* animation-duration: infinite; don't forget to set a duration! */
+}
+
+.placeholder{
+    background-color: rgb(168, 218, 220);
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .main-section__end{
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     margin-left: 4rem;
     margin-right: 4rem;
 }
@@ -173,6 +196,29 @@ footer {
     padding-bottom: 1rem;
 }
 
+.container__estudios{
+    margin-bottom: 5rem;
+}
+
+.card-title__personal{
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    color: var(--main-font-color);
+}
+
+.card-estudios{
+    height: 16rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.card-estudios img{
+    height: 15rem;
+    width: 100%;
+    object-fit: scale-down;
+}
+
 .img-proyecto{
     height: 150px;
     object-fit: cover;
@@ -186,6 +232,12 @@ footer {
     }
 }
 
+@media (max-width: 926px) {
+    .main-section{
+        margin-bottom: 3.5rem;
+    }
+}
+
 @media (max-width: 767px){
 
     .main-section{
@@ -194,5 +246,26 @@ footer {
 
     .img-personal{
         object-position: center;
+    }
+
+    .card-estudios{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .card-estudios img{
+        height: 9rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #profesoradoImgId{
+        display: flex;
+        order: 1;
+    }
+
+    #profesoradoTextId{
+        display: flex;
+        order: 2;
     }
 }
