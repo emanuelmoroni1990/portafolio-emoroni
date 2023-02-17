@@ -24,10 +24,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-body{
-    /* background-color: var(--main-background-color); */
-}
-
 ul{
     list-style: none;
 }
