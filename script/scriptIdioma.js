@@ -46,8 +46,6 @@ window.localStorage.setItem("banderaPrimeraVez", "true");
 
 // Obtengo el path donde el usuario se encuentra actualmente.
 var paginaActual = window.location.pathname;
-paginaActual = paginaActual - "/portafolio-emoroni";
-console.log(paginaActual);
 
 // Cuando el DOM se carga, evaluo la bandera y en base a eso es el idioma en el cual cargo el contenido.
 window.addEventListener('DOMContentLoaded', () => {changeLanguage(window.localStorage.getItem("banderaIdioma"))}, false);
@@ -120,7 +118,7 @@ function changeLanguage (language){
 function spanishFill (){
 
     switch(paginaActual){
-        case "/index.html":
+        case "/portafolio-emoroni/index.html":
             parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
 
             parrafoPresentacionRef.innerHTML = `
@@ -133,7 +131,7 @@ function spanishFill (){
 
             break;
 
-        case "/pages/estudios.html":
+        case "/portafolio-emoroni/pages/estudios.html":
             // Tarjetas de estudios
             tarjetaEstudiosUnoRef.setAttribute("class", "card-body");
 
@@ -161,7 +159,7 @@ function spanishFill (){
 
             break;
     
-        case "/pages/proyectos.html":
+        case "/portafolio-emoroni/pages/proyectos.html":
             // Tarjeta de proyectos
             proyectosUnoRef.innerHTML = `
                 En este breve ejemplo se utiliza al microcontrolador ESP32 como un punto de acceso para poder seleccionar la red WiFi a la cual conectarse. Una vez conectado,  continúa su utilización como una estación.
@@ -189,7 +187,7 @@ function spanishFill (){
 function englishFill (){
 
     switch(paginaActual){
-        case "/index.html":
+        case "/portafolio-emoroni/index.html":
             // Parrafos de presentacion personal
             parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
 
@@ -203,7 +201,7 @@ function englishFill (){
 
             break;
         
-        case "/pages/estudios.html":
+        case "/portafolio-emoroni/pages/estudios.html":
             // Tarjetas de estudios
             tarjetaEstudiosUnoRef.setAttribute("class", "card-body");
 
@@ -231,7 +229,7 @@ function englishFill (){
 
             break;
 
-        case "/pages/proyectos.html":
+        case "/portafolio-emoroni/pages/proyectos.html":
             // Tarjeta de proyectos
             proyectosUnoRef.innerHTML = `
                 In this short example, the ESP32 microcontroller is used as an access point to be able to select the WiFi network to connect to. Once connected, it continues to be used as a station.
