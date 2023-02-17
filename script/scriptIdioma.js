@@ -3,6 +3,8 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname
 
 console.log("Consola de pruebas.");
+console.log("Location: " + window.location);
+console.log("Location: " + window.location.pathname);
 
 // Barra de navegacion
 var estudiosRef = document.getElementById("estudiosId");
