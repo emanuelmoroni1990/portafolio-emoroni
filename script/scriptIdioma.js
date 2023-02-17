@@ -46,6 +46,8 @@ window.localStorage.setItem("banderaPrimeraVez", "true");
 
 // Obtengo el path donde el usuario se encuentra actualmente.
 var paginaActual = window.location.pathname;
+paginaActual = paginaActual - "/portafolio-emoroni";
+console.log(paginaActual);
 
 // Cuando el DOM se carga, evaluo la bandera y en base a eso es el idioma en el cual cargo el contenido.
 window.addEventListener('DOMContentLoaded', () => {changeLanguage(window.localStorage.getItem("banderaIdioma"))}, false);
