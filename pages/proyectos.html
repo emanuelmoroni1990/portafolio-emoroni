@@ -27,13 +27,8 @@
                     <li class="nav-item">
                         <a id="estudiosId" class="nav-link nav-link__personal" href="./estudios.html"></a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a id="proyectosId" class="nav-link dropdown-toggle nav-link__personal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./c.html">C / C++</a></li>
-                            <li><a class="dropdown-item" href="#">FrontEnd</a></li>
-                            <li><a class="dropdown-item" href="#">BackEnd</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a id="proyectosId" class="nav-link nav-link__personal" href="../pages/proyectos.html"></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a id="idiomaId" class="nav-link dropdown-toggle nav-link__personal" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
@@ -49,16 +44,18 @@
         <hr>
     </header>
 
-    <div class="container">
+    <!-- Tarjetas de presentación de los proyectos -->
+    <div class="container container__estudios">
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 col-sm-12 col-personal">
                 <div class="card card-proyecto">
                     <img src="../img/ESP32_1.jpg" class="card-img-top img-proyecto" alt="ImagenMicrocontrolador">
                     <div class="card-body">
-                        <h5 class="card-title">ESP32 - STA y AP</h5>
-                        <p class="card-text">En este breve ejemplo se utiliza al microcontrolador ESP32 como un punto de acceso para poder seleccionar la red WiFi a la cual conectarse. Una vez conectado,  continúa su utilización como una estación.</p>
+                        <h5 class="card-title">ESP32 - STA + AP</h5>
+                        <p id="parrafoProyectoUnoId" class="card-text"></p>
                     </div>
-                    <a href="https://github.com/emanuelmoroni1990/esp32_32_sta_ap" class="btn btn-success btn-personal">GitHub Repository</a>
+                    <p class="card-text"><small class="text-muted text-muted__personal">Lenguajes / Languages: C++, HTML, CSS.</small></p>
+                    <a href="https://github.com/emanuelmoroni1990/esp32_32_sta_ap" target="_blank" class="btn btn-success btn-personal">GitHub Repository</a>
                 </div>
             </div>
             
@@ -66,10 +63,11 @@
                 <div class="card card-proyecto">
                     <img src="../img/ESP32_2.jpg" class="card-img-top img-proyecto" alt="ImagenMicrocontrolador">
                     <div class="card-body">
-                        <h5 class="card-title">ESP01 - Timbre con selector de canciones</h5>
-                        <p class="card-text">Un microcontrolador ESP8266 es utilizado como punto de acceso para seleccionar una canción que se reproducirá al presión el timbre de un hogar.</p>
+                        <h5 class="card-title">ESP01 - STA + AP</h5>
+                        <p id="parrafoProyectoDosId" class="card-text"></p>
                     </div>
-                    <a href="#" class="btn btn-success btn-personal">GitHub Repository</a>
+                    <p class="card-text"><small class="text-muted text-muted__personal">Lenguajes / Languages: C++, HTML, CSS.</small></p>
+                    <a href="https://github.com/emanuelmoroni1990/esp_01_mp3_timbre" target="_blank" class="btn btn-success btn-personal">GitHub Repository</a>
                 </div>
             </div>
             
@@ -77,24 +75,52 @@
                 <div class="card-proyecto card">
                     <img src="../img/ESP32_3.jpg" class="card-img-top img-proyecto" alt="ImagenMicrocontrolador">
                     <div class="card-body">
-                        <h5 class="card-title">ESP32 CAM - Control de plantas</h5>
-                        <p class="card-text">Seguimiento del crecimiento de plantas en un sistema de cultivo escalable.</p>
+                        <h5 class="card-title">ESP32 CAM - SQL Database Project</h5>
+                        <p id="parrafoProyectoTresId" class="card-text"></p>
                     </div>
-                    <a href="#" class="btn btn-success btn-personal">GitHub Repository</a>
+                    <p class="card-text"><small class="text-muted text-muted__personal">Lenguajes / Languages: C++, PHP, SQL.</small></p>
+                    <a href="https://github.com/emanuelmoroni1990/ESP32_cactus_project" target="_blank" class="btn btn-success btn-personal">GitHub Repository</a>
                 </div>
             </div>
         </div>
-    </div>    
 
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-personal">
+                <div class="card card-proyecto">
+                    <img src="../img/proyectos/sistemaConsultorios.png" class="card-img-top img-proyecto" alt="ImagenMicrocontrolador">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development Project - CRM</h5>
+                        <p id="parrafoProyectoCuatroId" class="card-text"></p>
+                    </div>
+                    <p class="card-text"><small class="text-muted text-muted__personal">Lenguajes / Languages: HTML, CSS, SASS, JS, jQuery y Firebase.</small></p>
+                    <a href="https://github.com/emanuelmoroni1990/sistemasConsultorios" target="_blank" class="btn btn-success btn-personal">GitHub Repository</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 col-md-6 col-sm-12 col-personal">
+                <div class="card card-proyecto">
+                    <img src="../img/proyectos/react.jpg" class="card-img-top img-proyecto" alt="ImagenMicrocontrolador">
+                    <div class="card-body">
+                        <h5 class="card-title">React Project - Ecommerce</h5>
+                        <p id="parrafoProyectoCincoId"  class="card-text"></p>
+                    </div>
+                    <p class="card-text"><small class="text-muted text-muted__personal">Lenguajes / Languages: HTML, CSS, JS, React y Firebase.</small></p>
+                    <a href="https://github.com/emanuelmoroni1990/ferreteriasCampana" target="_blank" class="btn btn-success btn-personal">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
         <hr>
         <div class="footer__nav">
             <div></div>
             <ul class="row__personal row__personal--foot">
                 <!-- Quite las clases col__foot. TODO OK. REVISAR. emoroni. -->
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-gitlab"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/emanuelmoroni1990" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://gitlab.com/morozte" target="_blank"><i class="fa fa-gitlab"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/emanuel-moroni-1990-argentina/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
             <div></div>
         </div>
