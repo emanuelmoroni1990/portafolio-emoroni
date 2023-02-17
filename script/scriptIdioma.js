@@ -2,6 +2,8 @@
 // https://plainenglish.io/blog/passing-arguments-to-event-listeners-in-javascript-1a81bc397ecb
 // https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname
 
+console.log("Consola de pruebas.");
+
 // Barra de navegacion
 var estudiosRef = document.getElementById("estudiosId");
 var proyectosRef = document.getElementById("proyectosId");
@@ -33,6 +35,7 @@ var proyectosCincoRef = document.getElementById("parrafoProyectoCincoId");
 
 // En caso de que la variable local no exista, la creo y guardo el valor Ingles.
 if(window.localStorage.getItem("banderaIdioma") == null){
+    console.log("Creo la bandera porque es la primera vez.");
     window.localStorage.setItem("banderaIdioma", "Ingles");
 }
 
