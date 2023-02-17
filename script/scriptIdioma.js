@@ -3,8 +3,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname
 
 console.log("Consola de pruebas.");
-console.log("Location: " + window.location);
-console.log("Location: " + window.location.pathname);
 
 // Barra de navegacion
 var estudiosRef = document.getElementById("estudiosId");
@@ -46,7 +44,7 @@ window.localStorage.setItem("banderaPrimeraVez", "true");
 
 // Obtengo el path donde el usuario se encuentra actualmente.
 var paginaActual = window.location.pathname;
-console.log("Pagina actual" + paginaActual);
+console.log("Pagina actual: " + paginaActual);
 
 // Cuando el DOM se carga, evaluo la bandera y en base a eso es el idioma en el cual cargo el contenido.
 window.addEventListener('DOMContentLoaded', () => {changeLanguage(window.localStorage.getItem("banderaIdioma"))}, false);
@@ -119,6 +117,19 @@ function changeLanguage (language){
 function spanishFill (){
 
     switch(paginaActual){
+        case "/portafolio-emoroni/":
+            parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
+
+            parrafoPresentacionRef.innerHTML = `
+                <p id="parrafoUnoId" class="parrafo">¡Hola a todos! Mi nombre es Emanuel Moroni y deseo compartir en este breve sitio web un poco sobre mis conocimientos y habilidades.</p>
+                <p id="parrafoDosId"class="parrafo">En el año 2008 comencé la carrera de ingeniería en electrónica en la Universidad Tecnológica Nacional Facultad Regional Buenos Aires (UTN - FRBA), ubicada en la ciudad de Buenos Aires, Argentina.</p>
+                <p id="parrafoTresId" class="parrafo">Durante toda la carrera aprendí mucho sobre electrónica y programación, específicamente programación de sistemas embebidos. Para esto utilice los lenguajes de C y C++, pero apoyándome siempre sobre otros que fueron necesarios.</p>
+                <p id="parrafoCuatroId" class="parrafo">En los últimos 5 años estuve trabajando como profesor en la Escuela Técnica Roberto Rocca, enseñando sobre electrónica y programación. Empleando plataformas como Arduino y NodeMCU, pudimos desarrollar, junto con los estudiantes, numerosos proyectos que vinculaban los sistemas embebidos, con el desarrollo web y la gestión de bases de datos.</p>
+                <p id="parrafoCincoId" class="parrafo">Los invito a recorrer este espacio para conocer un poco más de mi y mi trabajo. Siéntase en la profunda libertad de consultar, mencionar o criticar para mejoras.</p>
+            `;
+
+            break;
+
         case "/portafolio-emoroni/index.html":
             parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
 
@@ -188,6 +199,20 @@ function spanishFill (){
 function englishFill (){
 
     switch(paginaActual){
+        case "/portafolio-emoroni/":
+            // Parrafos de presentacion personal
+            parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
+
+            parrafoPresentacionRef.innerHTML = `
+                <p id="parrafoUnoId" class="parrafo">¡Hello everyone! My name is Emanuel Moroni and I want to share with you, on this brief web syte, a little bit about me, my knowledge and habilities.</p>
+                <p id="parrafoDosId"class="parrafo">In 2008 I began electronic engineering carreer at the National Technological University Buenos Aires Regional Faculty (UTN - FRBA), located in Buenos Aires city, Argentina.</p>
+                <p id="parrafoTresId" class="parrafo">During all the carrer I learnt a lot of electronics and programming, specially about embedded systems programming. For the last mentioned I used C and C++ languages, but always supporting with others ones that were neccesary.</p>
+                <p id="parrafoCuatroId" class="parrafo">In the last 5 years I've working as teacher at Roberto Rocca Technical School, teaching about electronics and programming. Using platforms such Arduino and NodeMCU, we could develop, with the students, a lot of projects that link up embedded systems, web development and databases management.</p>
+                <p id="parrafoCincoId" class="parrafo">I invite you to travel through this space to know a little bit about me and my job. Feel in the freedom to ask, mention or criticize for improvements.</p>
+            `;
+
+            break;
+
         case "/portafolio-emoroni/index.html":
             // Parrafos de presentacion personal
             parrafoPresentacionRef.setAttribute("class", "presentacion-personal col-lg-6 col-md-6");
